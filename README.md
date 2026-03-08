@@ -104,7 +104,7 @@ DELETE /api/v1/employees/{id}
 Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USERNAME/employee-management-api-dotnet.git
+git clone https://github.com/JundiR02/employee-management-api-dotnet.git
 ```
 
 Navigate to the project:
@@ -122,7 +122,7 @@ dotnet run --project EmployeeApi
 Swagger UI will be available at:
 
 ```
-https://localhost:5001/swagger
+http://localhost:5169/swagger
 ```
 
 ---
