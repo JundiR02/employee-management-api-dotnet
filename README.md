@@ -1,41 +1,62 @@
 # Employee Management API (.NET)
 
-A RESTful Employee Management API built with ASP.NET Core.  
-This project demonstrates modern backend development practices including authentication, clean architecture, logging, and automated testing.
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET-Core-green)
+![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-red)
+![xUnit](https://img.shields.io/badge/Testing-xUnit-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+A modern **Employee Management REST API** built with **ASP.NET Core** demonstrating best practices in backend development including authentication, clean architecture, logging, and automated testing.
 
 ---
 
-## Features
+# Features
 
 - JWT Authentication
-- Role-Based Authorization (Admin/User)
-- CRUD Employee Management
-- Pagination & Filtering
+- Role-Based Authorization
+- Employee CRUD Operations
+- Pagination Support
 - API Versioning
 - Global Exception Handling Middleware
 - Logging with Serilog
-- AutoMapper for DTO Mapping
-- Repository Pattern & Service Layer
-- Unit Testing (xUnit + Moq)
+- DTO Mapping with AutoMapper
+- Repository Pattern
+- Service Layer Architecture
+- Unit Testing with xUnit & Moq
 - Integration Testing
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-- .NET 8
-- ASP.NET Core Web API
-- Entity Framework Core
+Backend Framework
+
+- ASP.NET Core Web API (.NET 8)
+
+Database
+
 - SQL Server
+- Entity Framework Core
+
+Libraries
+
 - AutoMapper
 - Serilog
+- JWT Bearer Authentication
+
+Testing
+
 - xUnit
 - Moq
-- Swagger (OpenAPI)
+- WebApplicationFactory
+
+API Documentation
+
+- Swagger / OpenAPI
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 DotnetPortofolio
@@ -58,15 +79,15 @@ DotnetPortofolio
 
 ---
 
-## Authentication
+# Authentication
 
-The API uses **JWT Bearer Token Authentication**.
+This API uses **JWT Bearer Token Authentication**.
 
 Example login response:
 
 ```json
 {
-  "token": "jwt_token_here"
+  "token": "your_jwt_token"
 }
 ```
 
@@ -78,16 +99,16 @@ Authorization: Bearer YOUR_TOKEN
 
 ---
 
-## API Endpoints
+# API Endpoints
 
-### Authentication
+Authentication
 
 ```
 POST /api/v1/auth/register
 POST /api/v1/auth/login
 ```
 
-### Employees
+Employees
 
 ```
 GET    /api/v1/employees
@@ -99,27 +120,27 @@ DELETE /api/v1/employees/{id}
 
 ---
 
-## Running the Project
+# Running the Project
 
-Clone the repository:
+Clone repository
 
 ```
 git clone https://github.com/JundiR02/employee-management-api-dotnet.git
 ```
 
-Navigate to the project:
+Navigate to project
 
 ```
 cd DotnetPortofolio
 ```
 
-Run the API:
+Run the API
 
 ```
 dotnet run --project EmployeeApi
 ```
 
-Swagger UI will be available at:
+Open Swagger
 
 ```
 http://localhost:5169/swagger
@@ -127,9 +148,9 @@ http://localhost:5169/swagger
 
 ---
 
-## Running Tests
+# Running Tests
 
-Run unit and integration tests:
+Run all unit and integration tests
 
 ```
 dotnet test
@@ -137,24 +158,26 @@ dotnet test
 
 ---
 
-## Logging
+# Logging
 
-Logging is implemented using **Serilog**.  
-Logs are stored in the `Logs` folder.
+Logging is implemented using **Serilog**.
+
+Logs are stored in the **Logs** directory.
 
 ---
 
-## Testing
+# Testing
 
 This project includes:
 
-- Unit Testing using **xUnit**
-- Mocking using **Moq**
-- Integration Testing using **WebApplicationFactory**
+- Unit Testing with **xUnit**
+- Mocking with **Moq**
+- Integration Testing with **WebApplicationFactory**
 
 ---
 
-## Author
+# Author
 
-Backend Developer Portfolio Project  
-Built with ASP.NET Core
+**Jundi Robbani**
+
+Backend Developer Portfolio Project built with ASP.NET Core
